@@ -23,7 +23,7 @@ class DateOfBirth
         $dateOfBirthAsDateTime = \DateTimeImmutable::createFromFormat('Y-m-d H:i:s', sprintf('%s 23:59:59', $dateOfBirth));
         if ($dateOfBirthAsDateTime > new \DateTimeImmutable('now')) {
 
-            throw InvalidDateOfBirth::mustNotBeInTheFuture();
+            throw InvalidDateConference::mustNotBeInTheFuture();
         }
 
         $this->dateOfBirth = $dateOfBirthAsDateTime;

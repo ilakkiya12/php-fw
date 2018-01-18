@@ -13,8 +13,8 @@ class Student
     private $yearOfEntry;
     private $sponsor;
 
-    public function __construct(string $firstName, string $lastName, DateOfBirth $dateOfBirth, int $yearOfEntry,
-        ?Student $sponsor = null)
+    public function __construct(string $firstName, string $lastName, DateConference $dateOfBirth, int $yearOfEntry,
+                                ?Student $sponsor = null)
     {
         $this->firstName = $firstName;
         $this->lastName = $lastName;

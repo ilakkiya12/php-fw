@@ -12,7 +12,7 @@ class Candidate
     private $dateOfBirth;
     private $yearOfEntry;
 
-    public function __construct(string $firstName, string $lastName, DateOfBirth $dateOfBirth, int $yearOfEntry)
+    public function __construct(string $firstName, string $lastName, DateConference $dateOfBirth, int $yearOfEntry)
     {
         $this->firstName = $firstName;
         $this->lastName = $lastName;
@@ -35,7 +35,7 @@ class Candidate
         return $this->lastName;
     }
 
-    public function getDateOfBirth(): DateOfBirth
+    public function getDateOfBirth(): DateConference
     {
         return $this->dateOfBirth;
     }
